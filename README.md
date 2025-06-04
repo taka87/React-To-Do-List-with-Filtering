@@ -42,7 +42,8 @@ npm install
 npm run dev
 
 4. Open your browser at http://localhost:5173/ to see the app in action. 
-p.s. Sometimes "Localhost:" address could variable than static in this point - please check your terminal "localhost:" address
+    Note: The local development server address may vary. Please check your terminal 
+    output to confirm the correct localhost URL.
 
 🧱 Project Structure
 The project is organized in a simple way suitable for small apps and MVPs:
