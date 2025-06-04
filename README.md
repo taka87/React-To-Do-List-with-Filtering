@@ -58,9 +58,3 @@ src/
 ├── App.tsx                # Main application logic and state management
 ├── App.css                # Global styles
 └── main.tsx               # Entry point (ReactDOM rendering)
-p.s.
-Note: For larger and more complex projects, consider:
-Using custom hooks to separate logic (hooks/ folder)
-Centralized state management (Redux, Zustand, Recoil, or Context API)
-Feature-based module structure
-Routing with react-router-dom for multiple pages
