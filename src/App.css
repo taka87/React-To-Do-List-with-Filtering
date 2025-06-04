@@ -1,0 +1,144 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+
+/* Global list reset */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Wrapper for the entire application */
+.app {
+  max-width: 500px;
+  margin: 2rem auto;
+  margin-top: 5rem;
+  padding: 3.5rem;
+  background-color: #fdfdfd;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Title style */
+.app-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Container for the filter buttons */
+.filter-buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+/* Individual filter button style */
+.filter-button {
+  padding: 6px 12px;
+  border: 1px solid #007bff;
+  background-color: white;
+  color: #007bff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.filter-button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Form wrapper */
+.todo-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 1rem;
+  margin-top: 3.5rem;
+}
+
+/* Input field styling */
+.todo-input {
+  flex-grow: 1;
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.todo-input:focus {
+  border-color: #007bff;
+}
+
+/* Add button styling */
+.add-button {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.add-button:hover {
+  background-color: #0056b3;
+}
+
+/* The overall to-do list container */
+.todo-list {
+  padding: 0;
+  margin-top: 16px;
+}
+
+/* Individual to-do item layout */
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* To-do text clickable area */
+.todo-text {
+  cursor: pointer;
+  flex-grow: 1;
+  padding: 6px 10px;
+  font-size: 16px;
+  transition: color 0.2s ease;
+}
+
+/* If item is completed - strikethrough */
+.todo-text.completed {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+/* Delete button styling */
+.delete-button {
+  margin-left: 12px;
+  background: red;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+.delete-button:hover {
+  background: darkred;
+}
