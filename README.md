@@ -33,7 +33,8 @@ To run the project locally, follow these steps:
 
 ```bash
 git clone https://github.com/taka87/React-To-Do-List-with-Filtering
-cd React-To-Do-List-with-Filtering
+cd React-To-Do-List-with-Filtering # or the folder name you chose when cloning
+    Note: If you renamed the folder while cloning, replace the path accordingly.
 
 2. **Install dependencies:**
 npm install
