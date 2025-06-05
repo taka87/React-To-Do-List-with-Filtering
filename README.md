@@ -23,6 +23,15 @@ A simple React + TypeScript ToDo application built with Vite. This app demonstra
 - Clear visual indication of completed tasks (strike-through text)
 - Responsive and clean UI with CSS modularization
 
+### ✅ Extra Features
+#### 🧹 Clear Completed Tasks
+Added a "Clear Completed Tasks" button that allows users to quickly delete all tasks marked as completed.
+- The button appears only when there are completed tasks.
+- Improves task management efficiency.
+
+#### ✏️ Edit Tasks
+Implemented inline editing for tasks.
+
 ---
 
 ## 🚀 Getting Started

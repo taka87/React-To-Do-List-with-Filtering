@@ -46,6 +46,21 @@ function App() {
     );
   };
 
+  // Edit a todo item 
+  const handleEdit = (id: number, newText: string) => {
+    setTodos(prevTodos =>
+      prevTodos.map(todo =>
+        todo.id === id ? { ...todo, text: newText } : todo
+      )
+    );
+  };
+
+  //Clear Completed ToDo Tasks
+  const handleClearCompleted = () => {
+    setTodos(prev => prev.filter(todo => !todo.completed));
+  };
+
+
   // Deletes a todo item by its ID
   function handleDeleteTodo(id: number) {
     setTodos((prevTodos) => prevTodos.filter((todo) => todo.id !== id));
@@ -69,6 +84,8 @@ function App() {
       <TodoList todos={filteredTodos} 
       onToggle={handleToggleTodo} 
       onDelete={handleDeleteTodo} 
+      onEdit={handleEdit}
+      onDeleteCompleted={handleClearCompleted}
       />  
 
       {/* Buttons to filter the todos */}
